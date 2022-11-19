@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>quality assuarence</title>
+	<style type="text/css">
+		.containerlog
+		{
+			height:280px;
+			width:280px;
+			background:white;
+			margin:7em auto;
+			margin-top:10px;
+		}
+			.containerlog1
+		{
+			height:400px;
+			width:400px;
+			background:lightgreen;
+			margin:7em auto;
+		}
+.txt
+{
+	height:20px;
+	width:200px;
+	border-radius:5px;
+	margin-top:10px;
+}
+
+	</style>
+</head>
+<body>
+	<div class="containerlog1"><br><br>
+<div class="containerlog">
+	<form method="post" action="regstud.php"><center>
+		<H1> Register Student</H1>
+<label>REG NUMBER</label>
+<input type="text" name="regno" class="txt" required>
+<label><br>Name</label><br>
+<input type="text" name="fname" class="txt" required>
+
+<label for="uname"><b><br>Phone</b></label><small></small><br><br>
+<input type="text" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" class="txt" required>
+<br><br>
+<label>Course</label>
+<select name="course">
+	<option name="Educ" value = "Educ">Educ</option>
+	<option name="nurse" value = "Educ">nurse</option>
+	<option name="Set" value = "Educ">Set</option>
+
+</select>
+<br><br>
+<input type="submit" value="Register"><br><br><a href="adminhome.php">back</a>
+	</form>
+
+</div>
+</center>
+</body>
+</html>
